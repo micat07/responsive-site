@@ -1,0 +1,129 @@
+@charset "UTF-8";
+@import "compass";
+.some-section {
+  @include clearfix;
+}
+
+.some-section {
+  overflow: hidden;
+  *zoom: 1;
+}
+
+/*# sourceMappingURL=style.css.map */
+
+// colors
+$baseColor: #ffffff;
+$subColor: #ffa07a;
+$keyColor: #ffffe0;
+
+/* Base
+------------------------------------------------------------*/
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: $baseColor; // CSSにすると、$baseColorがffffe0になる
+}
+
+/* Align
+------------------------------------------------------------*/
+
+.text-center {
+  text-align: center;
+}
+
+/* Layout
+------------------------------------------------------------*/
+
+.block-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+header {
+  .flexible-images {
+    width: 100%;
+    height: 500px;
+
+  }
+
+  h1 {
+    color: #4c4c4c;
+    text-align: center;
+    font-size: 3.8rem;
+  }
+}
+
+main {
+  .main {
+    background-color: $keyColor;
+    display: flex;
+    justify-content: space-between;
+    @media (max-width: 768px) {
+      flex-direction: column;
+    }
+  }
+
+  h2 {
+    color: $subColor;
+  }
+  .miryoku-box {
+    text-align: center;
+    width: 100%;
+    border: solid 1px tomato;
+    box-sizing: border-box;
+    @include flex(1);
+    margin: 10px 0; // 上下にマージン
+    padding: 20px;
+    background-color: $keyColor;
+    @include border-radius(4px);
+    @include box-sizing(border-box);
+  }
+
+  h3 {
+    color: $subColor;
+    margin-bottom: 10px;
+    font-size: 2.4rem;
+    font-weight: bold;
+  }
+
+}
+
+@media (max-width: 768px) {
+  flex-direction: column;
+}
+
+footer {
+  text-align: center;
+  background-color: $subColor;
+  margin-bottom: 5px;
+  padding-top: 15px;
+  font-size: 2.4rem;
+  h2 {
+    color: $keyColor
+  }
+
+  ul {
+    text-align: center;
+    margin-top: 60px;
+    display:flex;
+  }
+
+  li {
+    display: inline-block;
+    background-color: #f8e58c;
+    border-radius: 10px;
+    width: 80px;
+    height: 80px;
+    margin: 50px auto;
+p {
+      font-size: 1.8rem;
+        text-align: center;
+        line-height:80px
+}
+  }
+}
