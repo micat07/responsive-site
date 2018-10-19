@@ -48,7 +48,18 @@ header {
   .flexible-images {
     width: 100%;
     height: 500px;
+  }
 
+  .box {
+    //PC
+    background-image: url("./images/img_top.jpg");
+    background-size: cover;
+    background-position: center center;
+    height: 500px;
+    //SP
+    @media(max-width: 768px) {
+      height: 250px;
+    }
   }
 
   h1 {
@@ -57,6 +68,7 @@ header {
     font-size: 3.8rem;
   }
 }
+
 
 main {
   .main {
@@ -107,23 +119,13 @@ footer {
     color: $keyColor
   }
 
-  ul {
-    text-align: center;
-    margin-top: 60px;
-    display:flex;
-  }
-
-  li {
+  .btn {
     display: inline-block;
     background-color: #f8e58c;
     border-radius: 10px;
     width: 80px;
-    height: 80px;
+    /* height: 80px; */
+    padding: 20px;
     margin: 50px auto;
-p {
-      font-size: 1.8rem;
-        text-align: center;
-        line-height:80px
-}
   }
 }

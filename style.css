@@ -30,6 +30,14 @@ body {
 header .flexible-images {
   width: 100%;
   height: 500px; }
+header .box {
+  background-image: url("./images/img_top.jpg");
+  background-size: cover;
+  background-position: center center;
+  height: 500px; }
+  @media (max-width: 768px) {
+    header .box {
+      height: 250px; } }
 header h1 {
   color: #4c4c4c;
   text-align: center;
@@ -76,20 +84,13 @@ footer {
   font-size: 2.4rem; }
   footer h2 {
     color: #ffffe0; }
-  footer ul {
-    text-align: center;
-    margin-top: 60px;
-    display: flex; }
-  footer li {
+  footer .btn {
     display: inline-block;
     background-color: #f8e58c;
     border-radius: 10px;
     width: 80px;
-    height: 80px;
+    /* height: 80px; */
+    padding: 20px;
     margin: 50px auto; }
-    footer li p {
-      font-size: 1.8rem;
-      text-align: center;
-      line-height: 80px; }
 
 /*# sourceMappingURL=style.css.map */
